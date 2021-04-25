@@ -88,10 +88,12 @@ function canBuy(producer) {
     // Buy the producer
     currCookieAmount = currCookieAmount - producer.price;
     producer.amount = producer.amount + 1;
+    producer.price = Math.floor(producer.price * 1.2);
 
     // Update the producer element to reflect purchase
     cookieAmountElement.text(currCookieAmount + " Cookies!");
     producer.amountElement.text(producer.amount + " " + producer.name + "s!");
+    producer.buyElement.val("Buy for " + producer.price + " Cookies!");
   }
 }
 
