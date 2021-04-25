@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./index.js" defer></script>
+    <title>UIC Cookie Clicker!</title>
+</head>
+<body>
+    <h1 id="page-title">Cookie Clicker</h1>
+    <p id="page-description">
+       Welcome to your backery!
+       Click on the cookie below to bake a cookie,
+       then use those cookies to buy more cookie makers.
+    </p>
+    <input
+        type="image"
+        src="./Cookie.png"
+        id="create-cookie-button">
+    </input>
+    <p id="cookie-amount">0 Cookies</p>
+    <div class="producers">
+        <div id="grandma-producer">
+            <h2 class="producer-name">Grandma</h2>
+            <p class="producer-description">
+                Grandma is a master cookie-baker.
+                Her world famous cookies are sought out by grandchildren all over.
+            </p>
+            <p class="producer-amount"> Amount: 0 </p>
+            <input 
+                id="buy-grandma-button" 
+                class="producer-buy-button"
+                type="button"
+                value="Buy!">
+            </input>
+        </div>
+
+        <div id="monkey-producer">
+            <h2 class="producer-name">Cookie Monkey</h2>
+            <p class="producer-description">
+                Monkeys trained in the art of cookie-bakery.
+                Using both their opposable hands and feet, they're able to create
+                cookies more efficiently than any human ever could.
+            </p>
+            <p class="producer-amount"> Amount: 0 </p>
+            <input class="producer-buy-button" type="button" value="Buy!"></input>
+        </div>
+
+        <div>
+            <h2 class="producer-name">Cookinator</h2>
+            <p class="producer-description">
+                Robot sent back in time from the future to create cookies.
+                How will creating cookies stop the impending apocolypse?
+                They'll never tell...
+            </p>
+            <p class="producer-amount"> Amount: 0 </p>
+            <input class="producer-buy-button" type="button" value="Buy!"></input>
+        </div>
+    </div>
+</body>
+</html>
